@@ -1,0 +1,7 @@
+type NZBGetVersionPayload {
+  versionNumber: String
+}
+
+extend type Query {
+  NZBGetVersion: NZBGetVersionPayload
+}

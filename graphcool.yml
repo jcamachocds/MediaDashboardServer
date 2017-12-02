@@ -1,0 +1,14 @@
+types: ./types.graphql
+
+
+functions:
+  nZBGetVersion:
+    handler:
+      code:
+        src: ./src/nZBGetVersion.js
+        environment:
+          NZBGETURL: http://kebirek:TRECHWIdeNsi@kebirek.chickenkiller.com:6789/jsonrpc/version
+    type: resolver
+    schema: ./src/nZBGetVersion.graphql
+
+
